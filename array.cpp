@@ -14,7 +14,7 @@ int LinearIndex(int i, int j){
     }
 }
 
-int* ReverseIdx(int arr[7][7], int x, int arr1[24]){
+int* ReverseIdx(int arr2[7][7], int x, int arr1[24]){
     for(int i=0; i<7; i++){
         for(int j=0; j<7; j++){
             if(j<=i){
@@ -72,5 +72,37 @@ int main()
     return 0;
     
     
+    //Printing the first 20 elements of A and the indexes
+     for(int i=0; i<n; ++i){
+         for(int j=0; j<n; ++j){
+             if(A[i][j] != 0){
+                 cout<<"A[ "<<i<<" ] [ "<<j<<" ] "<<A[i][j]<<endl;
+             }
+        }
+     }
+        
+
+    //Printing the first 20 elements of B and the indexes
+    for (int i = 0; i < 20; ++i)
+    {
+        cout<<"B[ "<<i<<" ] "<<B[i]<<endl;
+    }
+   
+    cout<<" "<<endl;
+    
+
+    //Printing the first 20 elements of C and the indexes
+    for (int i = 0; i < 7; ++i){
+        for (int j = 0; j < 7; ++j)
+        {
+            if(C[i][j] != 0){
+                cout<<"C[ "<<i<<" ] [ "<<j<<" ] "<<C[i][j]<<endl;
+            }
+        }
+        
+    }
+
+    cout<<" "<<endl;
+    return 0;
     
 }
