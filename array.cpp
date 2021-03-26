@@ -71,7 +71,15 @@ int main()
     
     return 0;
     
-    
+}
+int C[7][7];
+    for (int i=0; i<24; i++){
+        int *D = ReverseIdx(C,i,B);
+        int g=D[0];
+        int h=D[1];
+
+        C[g][h]=B[i];
+    }
     //Printing the first 20 elements of A and the indexes
      for(int i=0; i<n; ++i){
          for(int j=0; j<n; ++j){
